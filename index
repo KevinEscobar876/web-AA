@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALIANZA AZUL | SE PARTE DEL CAMBIO</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- CURSOR -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-dot" id="cursorDot"></div>
+
+    <!-- NAV -->
+    <nav>
+        <a href="#" class="nav-logo">ALIANZA AZUL</a>
+        <ul class="nav-links">
+            <li><a href="#crisis">La Crisis</a></li>
+            <li><a href="#cifras">Cifras</a></li>
+            <li><a href="#impacto">Impacto</a></li>
+            <li><a href="#accion">Acción</a></li>
+        </ul>
+    </nav>
+
+    <!-- ══════════════════════════════════════════
+  HERO
+══════════════════════════════════════════ -->
+    <section id="hero" style="max-width:100%;padding:0;">
+        <!-- DROPS -->
+        <div class="drops-container">
+            <div class="drop drop-1">
+                <span class="drop-stat">700ml</span>
+                <span class="drop-label">por cada consulta<br>de IA</span>
+            </div>
+            <div class="drop drop-2">
+                <span class="drop-stat">3.5M</span>
+                <span class="drop-label">litros diarios<br>un datacenter</span>
+            </div>
+            <div class="drop drop-3">
+                <span class="drop-stat">40°C</span>
+                <span class="drop-label">temperatura<br>de servidores</span>
+            </div>
+            <div class="drop drop-4">
+                <span class="drop-stat">2050</span>
+                <span class="drop-label">año crítico<br>de escasez</span>
+            </div>
+            <div class="drop drop-5">
+                <span class="drop-stat">96%</span>
+                <span class="drop-label">agua dulce<br>inaccesible</span>
+            </div>
+            <div class="drop drop-6">
+                <span class="drop-stat">10X</span>
+                <span class="drop-label">crecimiento<br>esperado IA</span>
+            </div>
+        </div>
+
+        <!-- CENTER -->
+        <div class="hero-center">
+            <p class="hero-eyebrow">Campaña de Concientización Global</p>
+            <h1 class="hero-title">El <span>Agua</span><br>Que No Ves</h1>
+            <p class="hero-sub">Cada vez que usas inteligencia artificial, miles de litros de agua son consumidos para enfriar los servidores que hacen posible tu consulta. Esta es la historia que nadie te cuenta.</p>
+            <div class="btn-group">
+                <a href="#crisis" class="btn btn-primary">Descubrir la Crisis</a>
+                <a href="#accion" class="btn btn-ghost">Tomar Acción</a>
+            </div>
+        </div>
+
+        <div class="scroll-hint">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ══════════════════════════════════════════
+  CRISIS
+══════════════════════════════════════════ -->
+    <section id="crisis">
+        <div class="split reveal">
+            <div class="split-text">
+                <span class="section-tag">La Crisis Invisible</span>
+                <h2>IA consume <em>agua</em> como nunca antes</h2>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, ut enim ad minim veniam quis nostrud exercitation ullamco.</p>
+                <p class="body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <p class="body">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa.</p>
+
+                <div class="progress-list" style="margin-top:2rem;">
+                    <div class="progress-item">
+                        <div class="progress-label"><span>Enfriamiento de Servidores</span><span>78%</span></div>
+                        <div class="progress-track">
+                            <div class="progress-fill" data-width="78"></div>
+                        </div>
+                    </div>
+                    <div class="progress-item">
+                        <div class="progress-label"><span>Generación de Energía</span><span>14%</span></div>
+                        <div class="progress-track">
+                            <div class="progress-fill" data-width="14"></div>
+                        </div>
+                    </div>
+                    <div class="progress-item">
+                        <div class="progress-label"><span>Procesos Industriales</span><span>8%</span></div>
+                        <div class="progress-track">
+                            <div class="progress-fill" data-width="8"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="split-image">
+                <div class="img-placeholder img-p1">
+                    <div style="text-align:center;">
+                        <div class="server-visual" id="serverVis">
+                            <div class="server-bar" style="height:80px;animation-delay:.1s;"></div>
+                            <div class="server-bar" style="height:140px;animation-delay:.2s;"></div>
+                            <div class="server-bar" style="height:100px;animation-delay:.3s;"></div>
+                            <div class="server-bar" style="height:170px;animation-delay:.4s;"></div>
+                            <div class="server-bar" style="height:90px;animation-delay:.5s;"></div>
+                            <div class="server-bar" style="height:160px;animation-delay:.6s;"></div>
+                            <div class="server-bar" style="height:120px;animation-delay:.7s;"></div>
+                        </div>
+                        <p style="font-size:.7rem;letter-spacing:2px;text-transform:uppercase;color:rgba(34,211,238,0.4);margin-top:1rem;">Consumo de agua por datacenter</p>
+                    </div>
+                </div>
+                <span class="img-caption">Fuente: Research Lab 2024</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ══════════════════════════════════════════
+  STATS
+══════════════════════════════════════════ -->
+    <section id="cifras" style="padding-top:6rem;padding-bottom:6rem;">
+        <div style="text-align:center;margin-bottom:2rem;" class="reveal">
+            <span class="section-tag">Cifras que Impactan</span>
+            <h2>Los números<br>de la <em>sed digital</em></h2>
+        </div>
+
+        <div class="stats-row reveal">
+            <div class="stat-block">
+                <div class="stat-num">1.8<span class="stat-unit">B</span></div>
+                <div class="stat-desc">Litros/año en un solo<br>centro de datos grande</div>
+            </div>
+            <div class="stat-block">
+                <div class="stat-num">700<span class="stat-unit">ml</span></div>
+                <div class="stat-desc">Agua por cada 20-50<br>preguntas a ChatGPT</div>
+            </div>
+            <div class="stat-block">
+                <div class="stat-num">2X</div>
+                <div class="stat-desc">Crecimiento en consumo<br>hídrico cada 4 años</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+  QUOTE
+══════════════════════════════════════════ -->
+    <div class="big-quote">
+        <p class="quote-text reveal">"En 2027, la IA podría consumir más agua que todo el uso <em>doméstico</em> de países como Dinamarca o Bélgica"</p>
+        <p class="quote-source reveal">— Investigadores de Universidad de California, Riverside · 2023</p>
+    </div>
+
+    <!-- ══════════════════════════════════════════
+  IMPACTO
+══════════════════════════════════════════ -->
+    <section id="impacto">
+        <div class="split reverse reveal">
+            <div class="split-text">
+                <span class="section-tag">El Ciclo del Daño</span>
+                <h2>Del servidor<br>al <em>desierto</em></h2>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.</p>
+                <p class="body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis
+                    aute irure dolor in reprehenderit.</p>
+                <p class="body">In voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum lorem ipsum consectetur.</p>
+                <a href="#accion" class="btn btn-primary" style="margin-top:1.5rem;display:inline-flex;">Ver Soluciones →</a>
+            </div>
+            <div class="split-image">
+                <div class="img-placeholder img-p2">
+                    <!-- Animated water drain -->
+                    <svg width="180" height="220" viewBox="0 0 180 220" style="opacity:.25;">
+          <defs>
+            <linearGradient id="wg" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#22d3ee"/>
+              <stop offset="100%" stop-color="#0e7490"/>
+            </linearGradient>
+          </defs>
+          <ellipse cx="90" cy="30" rx="70" ry="25" fill="none" stroke="url(#wg)" stroke-width="2"/>
+          <path d="M20,30 Q20,120 90,190 Q160,120 160,30" fill="none" stroke="url(#wg)" stroke-width="2"/>
+          <path d="M50,70 Q90,100 130,70" fill="none" stroke="url(#wg)" stroke-width="1" opacity=".5"/>
+          <path d="M40,100 Q90,135 140,100" fill="none" stroke="url(#wg)" stroke-width="1" opacity=".5"/>
+          <path d="M55,130 Q90,158 125,130" fill="none" stroke="url(#wg)" stroke-width="1" opacity=".4"/>
+          <circle cx="90" cy="190" r="8" fill="#22d3ee" opacity=".4">
+            <animate attributeName="r" values="8;18;8" dur="2s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values=".4;0;.4" dur="2s" repeatCount="indefinite"/>
+          </circle>
+        </svg>
+                </div>
+                <span class="img-caption">Modelo hidrológico 2024</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ══════════════════════════════════════════
+  WATER COUNTER
+══════════════════════════════════════════ -->
+    <div class="counter-section">
+        <div class="reveal">
+            <span class="section-tag">En Tiempo Real</span>
+            <h2 style="margin-top:.5rem;">Agua consumida<br>mientras lees esto</h2>
+            <div class="counter-wrap">
+                <div class="ripple-rings">
+                    <div class="ring"></div>
+                    <div class="ring"></div>
+                    <div class="ring"></div>
+                </div>
+                <span class="water-count" id="waterCount">0</span>
+                <span class="water-count-label">Litros consumidos por IA a nivel global</span>
+            </div>
+            <p style="color:rgba(240,249,255,0.45);font-size:.85rem;letter-spacing:1px;">Desde que cargaste esta página</p>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- ══════════════════════════════════════════
+  CARDS
+══════════════════════════════════════════ -->
+    <section>
+        <div class="reveal" style="margin-bottom:1rem;">
+            <span class="section-tag">Consecuencias</span>
+            <h2>El costo <em>real</em><br>de la inteligencia</h2>
+        </div>
+
+        <div class="cards">
+            <div class="card reveal">
+                <div class="card-icon">🌊</div>
+                <h3>Escasez Hídrica</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam laboris exercitation.</p>
+            </div>
+            <div class="card reveal" style="transition-delay:.1s;">
+                <div class="card-icon">🌍</div>
+                <h3>Comunidades en Riesgo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam nostrud exercitation.</p>
+            </div>
+            <div class="card reveal" style="transition-delay:.2s;">
+                <div class="card-icon">♨️</div>
+                <h3>Calentamiento Local</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud.</p>
+            </div>
+            <div class="card reveal" style="transition-delay:.3s;">
+                <div class="card-icon">🐟</div>
+                <h3>Ecosistemas Dañados</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim veniam quis exercitation ullamco.</p>
+            </div>
+            <div class="card reveal" style="transition-delay:.4s;">
+                <div class="card-icon">⚡</div>
+                <h3>Demanda Energética</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud ullamco.</p>
+            </div>
+            <div class="card reveal" style="transition-delay:.5s;">
+                <div class="card-icon">📈</div>
+                <h3>Crecimiento sin Control</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam exercitation laboris.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ══════════════════════════════════════════
+  SECOND SPLIT
+══════════════════════════════════════════ -->
+    <section>
+        <div class="split reveal">
+            <div class="split-text">
+                <span class="section-tag">¿Qué Podemos Hacer?</span>
+                <h2>Tecnología<br><em>responsable</em></h2>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, ut enim ad minim veniam quis nostrud exercitation.</p>
+                <p class="body">Consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit
+                    voluptate.
+                </p>
+                <p class="body">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium laudantium totam rem aperiam eaque ipsa.</p>
+            </div>
+            <div class="split-image">
+                <div class="img-placeholder img-p3">
+                    <!-- Circular progress SVG -->
+                    <svg width="200" height="200" viewBox="0 0 200 200" style="opacity:.3;">
+          <circle cx="100" cy="100" r="80" fill="none" stroke="rgba(14,116,144,0.3)" stroke-width="8"/>
+          <circle cx="100" cy="100" r="80" fill="none" stroke="#22d3ee" stroke-width="8"
+            stroke-dasharray="377" stroke-dashoffset="94"
+            stroke-linecap="round" transform="rotate(-90 100 100)">
+            <animate attributeName="stroke-dashoffset" from="377" to="94" dur="2s" fill="freeze"/>
+          </circle>
+          <text x="100" y="95" text-anchor="middle" fill="#22d3ee" font-family="'Bebas Neue',sans-serif" font-size="36">75%</text>
+          <text x="100" y="118" text-anchor="middle" fill="rgba(240,249,255,0.4)" font-family="'DM Sans',sans-serif" font-size="11">reducción posible</text>
+        </svg>
+                </div>
+                <span class="img-caption">Potencial de reducción</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+
+    <div id="accion" class="cta-section">
+        <div class="reveal">
+            <span class="section-tag">Únete al Movimiento</span>
+            <h2>Sé parte del<br><em>cambio</em></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco.</p>
+            <div class="btn-group" style="justify-content:center;">
+                <a href="#" class="btn btn-primary">Firmar el Manifiesto</a>
+                <a href="#" class="btn btn-ghost">Compartir la Campaña</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <span class="footer-logo">ALIANZA AZUL</span>
+        <span>© 2026 · Campaña de Concientización Hídrica Global</span>
+        <span>Diseñado para un futuro sostenible</span>
+    </footer>
+</body>
+
+</html>
