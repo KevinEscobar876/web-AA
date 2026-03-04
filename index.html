@@ -1,337 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ALIANZA AZUL | SE PARTE DEL CAMBIO</title>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALIANZA AZUL | SÉ PARTE DEL CAMBIO</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
+<body class="mode-balanced">
 
-<body>
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
 
-    <!-- CURSOR -->
-    <div class="cursor" id="cursor"></div>
-    <div class="cursor-dot" id="cursorDot"></div>
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="nav-logo">ALIANZA AZUL</a>
+    <ul class="nav-links">
+      <li><a href="#crisis">La Crisis</a></li>
+      <li><a href="#cifras">Cifras</a></li>
+      <li><a href="#impacto">Impacto</a></li>
+      <li><a href="#accion">Acción</a></li>
+    </ul>
+    <!-- Sound toggle button in nav -->
+    <button class="sound-btn" id="soundToggle" onclick="toggleSound()" title="Activar sonido de agua">
+      <span id="soundIcon">🔇</span>
+      <span id="soundLabel">Silencio</span>
+    </button>
+  </nav>
 
-    <!-- NAV -->
-    <nav>
-        <a href="#" class="nav-logo">ALIANZA AZUL</a>
-        <ul class="nav-links">
-            <li><a href="#crisis">La Crisis</a></li>
-            <li><a href="#cifras">Cifras</a></li>
-            <li><a href="#impacto">Impacto</a></li>
-            <li><a href="#accion">Acción</a></li>
-        </ul>
-    </nav>
-
-    <!-- ══════════════════════════════════════════
-  HERO
-══════════════════════════════════════════ -->
-    <section id="hero" style="max-width:100%;padding:0;">
-        <!-- DROPS -->
-        <div class="drops-container">
-            <div class="drop drop-1">
-                <span class="drop-stat">700ml</span>
-                <span class="drop-label">por cada consulta<br>de IA</span>
-            </div>
-            <div class="drop drop-2">
-                <span class="drop-stat">3.5M</span>
-                <span class="drop-label">litros diarios<br>un datacenter</span>
-            </div>
-            <div class="drop drop-3">
-                <span class="drop-stat">40°C</span>
-                <span class="drop-label">temperatura<br>de servidores</span>
-            </div>
-            <div class="drop drop-4">
-                <span class="drop-stat">2050</span>
-                <span class="drop-label">año crítico<br>de escasez</span>
-            </div>
-            <div class="drop drop-5">
-                <span class="drop-stat">96%</span>
-                <span class="drop-label">agua dulce<br>inaccesible</span>
-            </div>
-            <div class="drop drop-6">
-                <span class="drop-stat">10X</span>
-                <span class="drop-label">crecimiento<br>esperado IA</span>
-            </div>
-        </div>
-
-        <!-- CENTER -->
-        <div class="hero-center">
-            <p class="hero-eyebrow">Campaña de Concientización Global</p>
-            <h1 class="hero-title">El <span>Agua</span><br>Que No Ves</h1>
-            <p class="hero-sub">Cada vez que usas inteligencia artificial, miles de litros de agua son consumidos para enfriar los servidores que hacen posible tu consulta. Esta es la historia que nadie te cuenta.</p>
-            <div class="btn-group">
-                <a href="#crisis" class="btn btn-primary">Descubrir la Crisis</a>
-                <a href="#accion" class="btn btn-ghost">Tomar Acción</a>
-            </div>
-        </div>
-
-        <div class="scroll-hint">
-            <span>Scroll</span>
-            <div class="scroll-line"></div>
-        </div>
-    </section>
-
-    <div class="divider"></div>
-
-    <!-- ══════════════════════════════════════════
-  CRISIS
-══════════════════════════════════════════ -->
-    <section id="crisis">
-        <div class="split reveal">
-            <div class="split-text">
-                <span class="section-tag">La Crisis Invisible</span>
-                <h2>IA consume <em>agua</em> como nunca antes</h2>
-                <p class="lead">Hoy en día, debido al uso excesivo y acelerado de la IA se ha generado un aumento del uso de servidores y centros de datos, los cuales precisan de un enfriamiento constante para mantener una temperatura apta para su debido funcionamiento, lo que conlleva a un uso excesivo del agua.
-</p>
-                <p class="body"> El uso en exceso del agua con respecto a los sistemas de enfriamiento representa un grave problema debido a que los centros de datos utilizan toneladas de agua que contribuyen al agotamiento de esta misma.</p>
-                <p class="body">Es importante reconocer el desconocimiento que existe entre las personas, sus actividades digitales y el consumo de agua. Esta falta de información tiene un impacto constante en los recursos hídricos, ya que existe un uso inconsciente de las aplicaciones digitales.</p>
-
-                <div class="progress-list" style="margin-top:2rem;">
-                    <div class="progress-item">
-                        <div class="progress-label"><span>Enfriamiento de Servidores</span><span>78%</span></div>
-                        <div class="progress-track">
-                            <div class="progress-fill" data-width="78"></div>
-                        </div>
-                    </div>
-                    <div class="progress-item">
-                        <div class="progress-label"><span>Generación de Energía</span><span>14%</span></div>
-                        <div class="progress-track">
-                            <div class="progress-fill" data-width="14"></div>
-                        </div>
-                    </div>
-                    <div class="progress-item">
-                        <div class="progress-label"><span>Procesos Industriales</span><span>8%</span></div>
-                        <div class="progress-track">
-                            <div class="progress-fill" data-width="8"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="split-image">
-                <div class="img-placeholder img-p1">
-                    <div style="text-align:center;">
-                        <div class="server-visual" id="serverVis">
-                            <div class="server-bar" style="height:80px;animation-delay:.1s;"></div>
-                            <div class="server-bar" style="height:140px;animation-delay:.2s;"></div>
-                            <div class="server-bar" style="height:100px;animation-delay:.3s;"></div>
-                            <div class="server-bar" style="height:170px;animation-delay:.4s;"></div>
-                            <div class="server-bar" style="height:90px;animation-delay:.5s;"></div>
-                            <div class="server-bar" style="height:160px;animation-delay:.6s;"></div>
-                            <div class="server-bar" style="height:120px;animation-delay:.7s;"></div>
-                        </div>
-                        <p style="font-size:.7rem;letter-spacing:2px;text-transform:uppercase;color:rgba(34,211,238,0.4);margin-top:1rem;">Consumo de agua por datacenter</p>
-                    </div>
-                </div>
-                <span class="img-caption">Fuente: mi equipo y yo</span>
-            </div>
-        </div>
-    </section>
-
-    <div class="divider"></div>
-
-    <!-- ══════════════════════════════════════════
-  STATS
-══════════════════════════════════════════ -->
-    <section id="cifras" style="padding-top:6rem;padding-bottom:6rem;">
-        <div style="text-align:center;margin-bottom:2rem;" class="reveal">
-            <span class="section-tag">Cifras que Impactan</span>
-            <h2>Los números<br>de la <em>sed digital</em></h2>
-        </div>
-
-        <div class="stats-row reveal">
-            <div class="stat-block">
-                <div class="stat-num">1.8<span class="stat-unit">B</span></div>
-                <div class="stat-desc">Litros/año en un solo<br>centro de datos grande</div>
-            </div>
-            <div class="stat-block">
-                <div class="stat-num">700<span class="stat-unit">ml</span></div>
-                <div class="stat-desc">Agua por cada 20-50<br>preguntas a ChatGPT</div>
-            </div>
-            <div class="stat-block">
-                <div class="stat-num">2X</div>
-                <div class="stat-desc">Crecimiento en consumo<br>hídrico cada 4 años</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ══════════════════════════════════════════
-  QUOTE
-══════════════════════════════════════════ -->
-    <div class="big-quote">
-        <p class="quote-text reveal">"En 2027, la IA podría consumir más agua que todo el uso <em>doméstico</em> de países como Dinamarca o Bélgica"</p>
-        <p class="quote-source reveal">— Investigadores de Universidad de California, Riverside · 2023</p>
+  <!-- HERO -->
+  <section id="hero" style="max-width:100%;padding:0;">
+    <div class="drops-container">
+      <div class="drop drop-1"><span class="drop-stat">700ml</span><span class="drop-label">por cada consulta<br>de IA</span></div>
+      <div class="drop drop-2"><span class="drop-stat">3.5M</span><span class="drop-label">litros diarios<br>un datacenter</span></div>
+      <div class="drop drop-3"><span class="drop-stat">40°C</span><span class="drop-label">temperatura<br>de servidores</span></div>
+      <div class="drop drop-4"><span class="drop-stat">2050</span><span class="drop-label">año crítico<br>de escasez</span></div>
+      <div class="drop drop-5"><span class="drop-stat">96%</span><span class="drop-label">agua dulce<br>inaccesible</span></div>
+      <div class="drop drop-6"><span class="drop-stat">10X</span><span class="drop-label">crecimiento<br>esperado IA</span></div>
     </div>
-
-    <!-- ══════════════════════════════════════════
-  IMPACTO
-══════════════════════════════════════════ -->
-    <section id="impacto">
-        <div class="split reverse reveal">
-            <div class="split-text">
-                <span class="section-tag">El Ciclo del Daño</span>
-                <h2>Del servidor<br>al <em>desierto</em></h2>
-                <p class="lead">Cuando una persona escribe una pregunta en su celular o computadora, el mensaje se convierte en datos y viaja por internet hasta un centro de datos donde están los servidores que ejecutan la inteligencia artificial. Allí, el sistema analiza el texto haciendo millones de cálculos para entenderlo y generar una respuesta. Luego, esa respuesta vuelve a viajar por internet hasta el dispositivo del usuario, quien la recibe en su pantalla en cuestión de segundos. </p>
-                <p class="body">Todo este proceso ocurre gracias a redes de comunicación globales y a potentes computadoras que trabajan continuamente. Los centros de datos utilizan grandes cantidades de energía y sistemas de enfriamiento para evitar el sobrecalentamiento, ya que los cálculos que realiza la IA requieren mucha capacidad de procesamiento.</p>
-                <a href="#accion" class="btn btn-primary" style="margin-top:1.5rem;display:inline-flex;">Ver Soluciones →</a>
-            </div>
-            <div class="split-image">
-                <div class="img-placeholder img-p2">
-                    <!-- Animated water drain -->
-                    <svg width="180" height="220" viewBox="0 0 180 220" style="opacity:.25;">
-          <defs>
-            <linearGradient id="wg" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#22d3ee"/>
-              <stop offset="100%" stop-color="#0e7490"/>
-            </linearGradient>
-          </defs>
-          <ellipse cx="90" cy="30" rx="70" ry="25" fill="none" stroke="url(#wg)" stroke-width="2"/>
-          <path d="M20,30 Q20,120 90,190 Q160,120 160,30" fill="none" stroke="url(#wg)" stroke-width="2"/>
-          <path d="M50,70 Q90,100 130,70" fill="none" stroke="url(#wg)" stroke-width="1" opacity=".5"/>
-          <path d="M40,100 Q90,135 140,100" fill="none" stroke="url(#wg)" stroke-width="1" opacity=".5"/>
-          <path d="M55,130 Q90,158 125,130" fill="none" stroke="url(#wg)" stroke-width="1" opacity=".4"/>
-          <circle cx="90" cy="190" r="8" fill="#22d3ee" opacity=".4">
-            <animate attributeName="r" values="8;18;8" dur="2s" repeatCount="indefinite"/>
-            <animate attributeName="opacity" values=".4;0;.4" dur="2s" repeatCount="indefinite"/>
-          </circle>
-        </svg>
-                </div>
-                <span class="img-caption">Modelo hidrológico 2024</span>
-            </div>
-        </div>
-    </section>
-
-    <div class="divider"></div>
-
-    <!-- ══════════════════════════════════════════
-  WATER COUNTER
-══════════════════════════════════════════ -->
-    <div class="counter-section">
-        <div class="reveal">
-            <span class="section-tag">En Tiempo Real</span>
-            <h2 style="margin-top:.5rem;">Agua consumida<br>mientras lees esto</h2>
-            <div class="counter-wrap">
-                <div class="ripple-rings">
-                    <div class="ring"></div>
-                    <div class="ring"></div>
-                    <div class="ring"></div>
-                </div>
-                <span class="water-count" id="waterCount">90 millones</span>
-                <span class="water-count-label">Litros consumidos por IA a nivel global</span>
-            </div>
-            <p style="color:rgba(240,249,255,0.45);font-size:.85rem;letter-spacing:1px;">Desde que cargaste esta página</p>
-        </div>
+    <div class="hero-center">
+      <p class="hero-eyebrow">Campaña de Concientización Global</p>
+      <h1 class="hero-title">El <span>Agua</span><br>Que No Ves</h1>
+      <p class="hero-sub">Cada vez que usas inteligencia artificial, miles de litros de agua son consumidos para enfriar los servidores que hacen posible tu consulta. Esta es la historia que nadie te cuenta.</p>
+      <div class="btn-group">
+        <a href="#crisis" class="btn btn-primary">Descubrir la Crisis</a>
+        <a href="#accion" class="btn btn-ghost">Tomar Acción</a>
+      </div>
     </div>
+    <div class="scroll-hint"><span>Scroll</span><div class="scroll-line"></div></div>
+  </section>
 
-    <div class="divider"></div>
+  <div class="divider"></div>
 
-    <!-- ══════════════════════════════════════════
-  CARDS
-══════════════════════════════════════════ -->
-    <section>
-        <div class="reveal" style="margin-bottom:1rem;">
-            <span class="section-tag">Consecuencias</span>
-            <h2>El costo <em>real</em><br>de la inteligencia</h2>
-        </div>
+  <!-- ══════════════════════════════════════════
+    VIEW MODE SWITCHER
+  ══════════════════════════════════════════ -->
+  <div class="view-switcher-wrap" id="view-switcher">
+    <div class="view-switcher-inner">
+      <div class="view-switcher-label">
+        <span class="vs-tag">Personaliza tu experiencia</span>
+        <p>Elige cómo quieres explorar esta campaña</p>
+      </div>
+      <div class="view-switcher-btns">
+        <button class="mode-btn" data-mode="infographic" onclick="setViewMode('infographic')">
+          <span class="mode-icon">🖼️</span>
+          <span class="mode-name">Infografía</span>
+          <span class="mode-desc">Visual e interactiva</span>
+        </button>
+        <button class="mode-btn active" data-mode="balanced" onclick="setViewMode('balanced')">
+          <span class="mode-icon">⚖️</span>
+          <span class="mode-name">Balanceado</span>
+          <span class="mode-desc">Texto e imágenes</span>
+        </button>
+        <button class="mode-btn" data-mode="text" onclick="setViewMode('text')">
+          <span class="mode-icon">📖</span>
+          <span class="mode-name">Lectura</span>
+          <span class="mode-desc">Más texto</span>
+        </button>
+      </div>
+    </div>
+  </div>
 
-        <div class="cards">
-            <div class="card reveal">
-                <div class="card-icon">🌊</div>
-                <h3>Escasez Hídrica</h3>
-                <p>Los centros de datos que entrenan y ejecutan modelos de IA necesitan grandes volúmenes de agua para enfriamiento. En zonas con estrés hídrico, eso compite con el consumo humano y agrícola.</p>
-            </div>
-            <div class="card reveal" style="transition-delay:.1s;">
-                <div class="card-icon">🌍</div>
-                <h3>Comunidades en Riesgo</h3>
-                <p>La instalación de infraestructura tecnológica concentra consumo de energía y agua en territorios específicos. Si hay fallas, contaminación o sobreexplotación de recursos, las comunidades locales asumen el impacto, no las empresas globales.</p>
-            </div>
-            <div class="card reveal" style="transition-delay:.2s;">
-                <div class="card-icon">♨️</div>
-                <h3>Calentamiento Local</h3>
-                <p>Los centros de datos liberan calor constante. En áreas urbanas ya afectadas por islas de calor, esto intensifica la temperatura del entorno inmediato.</p>
-            </div>
-            <div class="card reveal" style="transition-delay:.3s;">
-                <div class="card-icon">🐟</div>
-                <h3>Ecosistemas Dañados</h3>
-                <p>La fabricación de hardware para IA (chips, servidores) requiere minería de litio, cobre y tierras raras. Eso implica deforestación, contaminación de suelos y pérdida de biodiversidad.</p>
-            </div>
-            <div class="card reveal" style="transition-delay:.4s;">
-                <div class="card-icon">⚡</div>
-                <h3>Demanda Energética</h3>
-                <p> Entrenar modelos avanzados consume enormes cantidades de electricidad. Si la matriz energética depende de combustibles fósiles, la IA incrementa emisiones de CO₂.</p>
-            </div>
-            <div class="card reveal" style="transition-delay:.5s;">
-                <div class="card-icon">📈</div>
-                <h3>Crecimiento sin Control</h3>
-                <p>La expansión acelerada de la IA prioriza competencia y velocidad sobre regulación ambiental. Sin límites claros, el consumo de recursos escala más rápido que las medidas de mitigación.</p>
-            </div>
-        </div>
-    </section>
+  <!-- DYNAMIC CONTENT AREA -->
+  <div id="main-content">
+    <div id="dynamic-sections"></div>
 
-    <div class="divider"></div>
-
-    <!-- ══════════════════════════════════════════
-  SECOND SPLIT
-══════════════════════════════════════════ -->
-    <section>
-        <div class="split reveal">
-            <div class="split-text">
-                <span class="section-tag">¿Qué Podemos Hacer?</span>
-                <h2>Tecnología<br><em>responsable</em></h2>
-                <p class="lead">Usar la inteligencia artificial de forma responsable significa tratar de que no dañe al planeta ni a las personas.
-Para gastar menos agua y no aumentar el calor en ciertas zonas, los lugares donde se guardan y procesan los datos deben usar mejores sistemas para enfriarse, usar energías limpias como la solar o la eólica, y construirse en sitios donde no empeoren problemas ambientales que ya existen. </p>
-                <p class="body"> Para no afectar la naturaleza ni a comunidades vulnerables, es necesario hacer estudios antes de instalar estos centros, ser claros sobre cuánta agua y energía usan. </p>
-                <p class="body">También es importante crear programas que consuman menos energía, en vez de hacerlos cada vez más grandes si eso implica un mayor gasto.
-
-Además, deben existir reglas claras para evitar que su crecimiento sea descontrolado y cause más impacto del necesario.</p>
-            </div>
-            <div class="split-image">
-                <div class="img-placeholder img-p3">
-                    <!-- Circular progress SVG -->
-                    <svg width="200" height="200" viewBox="0 0 200 200" style="opacity:.3;">
-          <circle cx="100" cy="100" r="80" fill="none" stroke="rgba(14,116,144,0.3)" stroke-width="8"/>
-          <circle cx="100" cy="100" r="80" fill="none" stroke="#22d3ee" stroke-width="8"
-            stroke-dasharray="377" stroke-dashoffset="94"
-            stroke-linecap="round" transform="rotate(-90 100 100)">
-            <animate attributeName="stroke-dashoffset" from="377" to="94" dur="2s" fill="freeze"/>
-          </circle>
-          <text x="100" y="95" text-anchor="middle" fill="#22d3ee" font-family="'Bebas Neue',sans-serif" font-size="36">75%</text>
-          <text x="100" y="118" text-anchor="middle" fill="rgba(240,249,255,0.4)" font-family="'DM Sans',sans-serif" font-size="11">reducción posible</text>
-        </svg>
-                </div>
-                <span class="img-caption">Potencial de reducción</span>
-            </div>
-        </div>
-    </section>
-
-    <div class="divider"></div>
-
-
+    <!-- CTA (always shown) -->
     <div id="accion" class="cta-section">
-        <div class="reveal">
-            <span class="section-tag">Únete al Movimiento</span>
-            <h2>Sé parte del<br><em>cambio</em></h2>
-            <p>El cambio no ocurre solo, lo construimos entre todos. Cada decisión cuenta: cómo usamos la tecnología, cómo consumimos información y cómo cuidamos nuestro entorno.
-                Infórmate, cuestiona, participa y actúa con responsabilidad.
-            </p>
-            <div class="btn-group" style="justify-content:center;">
-                <a href="#" class="btn btn-primary">Firmar el Manifiesto</a>
-                <a href="#" class="btn btn-ghost">Compartir la Campaña</a>
-            </div>
+      <div class="reveal">
+        <span class="section-tag">Únete al Movimiento</span>
+        <h2>Sé parte del<br><em>cambio</em></h2>
+        <p>El cambio no ocurre solo, lo construimos entre todos. Cada decisión cuenta: cómo usamos la tecnología, cómo consumimos información y cómo cuidamos nuestro entorno. Infórmate, cuestiona, participa y actúa con responsabilidad.</p>
+        <div class="btn-group" style="justify-content:center;">
+          <a href="#" class="btn btn-primary">Firmar el Manifiesto</a>
+          <button class="btn btn-ghost" onclick="shareCampaign()">Compartir la Campaña</button>
         </div>
+      </div>
     </div>
 
-    <!-- FOOTER -->
-    <footer>
-        <span class="footer-logo">ALIANZA AZUL</span>
-        <span>© 2026 · Campaña de Concientización Hídrica Global</span>
-        <span>Diseñado para un futuro sostenible</span>
-    </footer>
-</body>
+    <!-- SOCIAL MEDIA SECTION -->
+    <div class="social-section">
+      <div class="reveal">
+        <span class="section-tag">Síguenos</span>
+        <h2 style="margin:.6rem 0 .5rem;">Únete a la<br><em>comunidad</em></h2>
+        <p class="social-sub">Comparte, informa y actúa. Cada publicación es una gota que suma.</p>
+        <div class="social-cards">
+          <a href="https://www.instagram.com/alianzaazul.campaign" target="_blank" rel="noopener" class="social-card instagram">
+            <div class="social-card-bg"></div>
+            <div class="social-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.8"/>
+                <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.8"/>
+                <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/>
+              </svg>
+            </div>
+            <div class="social-card-info">
+              <span class="social-card-name">Instagram</span>
+              <span class="social-card-handle">@alianzaazul.campaign</span>
+              <span class="social-card-cta">Ver perfil →</span>
+            </div>
+            <div class="social-card-pulse"></div>
+          </a>
+        </div>
+      </div>
+    </div>
 
+    <footer>
+      <span class="footer-logo">ALIANZA AZUL</span>
+      <span>© 2026 · Campaña de Concientización Hídrica Global</span>
+      <span>Diseñado para un futuro sostenible</span>
+    </footer>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast" id="toast">
+    <span class="toast-icon">🔗</span>
+    <span id="toastMsg">¡Enlace copiado al portapapeles!</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>
