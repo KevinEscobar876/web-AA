@@ -1,12 +1,7 @@
 <?php
-// ══════════════════════════════════════════
-//  ALIANZA AZUL — Conexión a base de datos
-//  Ajusta los valores según tu entorno local
-// ══════════════════════════════════════════
-
 define('DB_HOST',   'localhost');
-define('DB_USER',   'root');        // usuario de tu MySQL/phpMyAdmin
-define('DB_PASS',   '');            // contraseña (vacía en XAMPP por defecto)
+define('DB_USER',   'root');        
+define('DB_PASS',   '');  
 define('DB_NAME',   'alianza_azul');
 define('DB_CHARSET','utf8mb4');
 
