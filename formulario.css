@@ -42,7 +42,6 @@
     .form-back:hover { color: var(--cyan); }
     .form-back::before { content: '←'; font-size: 1rem; }
 
-    /* Barra */
     .form-progress {
       width: 100%;
       max-width: 640px;
@@ -129,7 +128,7 @@
       box-shadow: 0 24px 80px rgba(0,0,0,0.4);
     }
 
-    /* fases */
+    
     .form-step {
       display: none;
       animation: stepIn .4s ease;
@@ -164,7 +163,7 @@
       color: rgba(240,249,255,0.45);
     }
 
-    /* campos */
+   
     .field-group { margin-bottom: 1.5rem; }
     .field-group label {
       display: block;
@@ -407,7 +406,6 @@
       color: var(--cyan);
     }
 
-    /* Completion screen */
     .form-success {
       display: none;
       text-align: center;
